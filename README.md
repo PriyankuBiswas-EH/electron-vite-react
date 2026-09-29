@@ -37,10 +37,15 @@ pnpm dev
 
 - `pnpm dev`: start the Vite dev server.
 - `pnpm build`: build the renderer and package the app with electron-builder.
+- `pnpm build:win`: build the Windows x64 NSIS `.exe` installer locally without publishing.
 - `pnpm preview`: preview the production web build locally.
 - `pnpm test`: run Vitest unit tests.
 - `pnpm test:e2e`: build the test mode bundle and run Playwright tests.
 - `pnpm typecheck`: run the TypeScript type checker.
+
+The Windows installer is written to `release\<version>\<productName>_<version>_Setup.exe`.
+The package version (currently `2.3.1-alpha.1`) also supplies the installer's Windows
+`DisplayVersion`, preserving the `alpha` label in Installed apps.
 
 ## Project Structure
 

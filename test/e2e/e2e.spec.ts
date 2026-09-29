@@ -77,7 +77,7 @@ test.describe('[electron-vite-react] e2e tests', () => {
   test('should be home page is load correctly', async () => {
     const h1 = await page.$('h1')
     const title = await h1?.textContent()
-    expect(title).toBe('A sharp starter with Tailwind-first styling.')
+    expect(title).toBe('Modern starter, cleaner rhythm, unified visual language.')
   })
 
   test('should be count button can click', async () => {
